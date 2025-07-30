@@ -1,0 +1,7 @@
+html,
+body,
+#root {
+    background-color: rgb(53, 50, 83);
+    margin: 0;
+    color: white;
+}

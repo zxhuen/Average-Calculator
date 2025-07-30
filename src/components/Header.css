@@ -1,0 +1,96 @@
+@import "tailwindcss";
+#Title {
+    font-size: 1.7vw;
+}
+
+#MadeBy {
+    font-size: 0.9vw;
+    opacity: 0.6;
+}
+
+@media (max-width: 575.98px) {
+    #Title {
+        font-size: 5.3vw;
+    }
+    #MadeBy {
+        font-size: 3vw;
+        opacity: 0.6;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #Title {
+        font-size: 4vw;
+    }
+    #MadeBy {
+        font-size: 2.5vw;
+        opacity: 0.6;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #Title {
+        font-size: 4vw;
+    }
+    #MadeBy {
+        font-size: 2.3vw;
+        opacity: 0.6;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #Title {
+        font-size: 4vw;
+    }
+    #MadeBy {
+        font-size: 2.1vw;
+        opacity: 0.6;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #MainBodyContainer input {
+        padding: 0.5vw;
+        font-size: 2vw;
+    }
+    #MainBodyContainer button {
+        font-size: 2vw;
+    }
+    #finalGradeText {
+        font-size: 3vw;
+    }
+    #finalGrade {
+        font-size: 3vw;
+    }
+}
+
+
+/* Extra extra large devices (very large desktops, 1400px and up) */
+
+@media (min-width: 1920px) {
+    #MainBodyContainer input {
+        padding: 0.5vw;
+        font-size: 1.2vw;
+    }
+    #MainBodyContainer button {
+        font-size: 1.2vw;
+    }
+    #finalGradeText {
+        font-size: 2vw;
+    }
+    #finalGrade {
+        font-size: 2vw;
+    }
+}
