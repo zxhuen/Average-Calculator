@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./MainBody.css";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const MainBody = () => {
   const [Prelims, setPrelims] = useState<string>("");
@@ -60,6 +61,8 @@ const MainBody = () => {
         setFinalGrade(final);
         switchChange(!change);
         onWord("or 1.75");
+      } else if (finalGrade > 100) {
+        alert("Higher than 100 is non eligible");
       }
 
       if (!change) return finalGrade;
@@ -69,9 +72,22 @@ const MainBody = () => {
   };
 
   return (
-    <div
+    <motion.div
       className="w-full max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8 my-40"
       id="MainBodyContainer"
+      initial={{
+        y: 80,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.8,
+        type: "spring",
+        stiffness: 200,
+      }}
     >
       <div className="flex flex-col gap-4">
         <input
@@ -116,7 +132,7 @@ const MainBody = () => {
           {FinalGrade} {word}
         </h1>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
